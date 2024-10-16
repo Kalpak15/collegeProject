@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+{% block body %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image:  url('{{ url_for('static', filename='assets/img/car3.jpg') }}')">
+              <link href="{{url_for('static',filename="css/booking.css")}}" rel="stylesheet" />
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Book You Vehicle </h1>
+                            <h2 class="subheading">Start Your Journey</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!"></a>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+
+                        <div class="car"><h1>Select The Driver Or Car</h1></div>
+                        <br>
+                          <div class="drive">
+                          <span class="selection">
+                              <div class="info">
+                            <a href="{{url_for('drivers')}}">Choose A Driver</a>
+                            <a href="{{url_for('cars')}}">Choose A Car</a>
+                                  </div>
+                              <br>
+                              <div class="img">
+                              <img src="{{url_for('static',filename="assets/img/car2.jpg")}}" height=200px width=200px>
+                               <img src="{{url_for('static',filename="assets/img/car1.jpg")}}" height=200px width=200px>
+                                  </div>
+                           </span>
+                              </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+{% endblock %}

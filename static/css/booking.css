@@ -1,0 +1,31 @@
+.car{
+  justify-content:center;
+  align-item:center;
+  padding-left: 80px;
+}
+
+
+.drive{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+.selection a{
+    padding-left: 63px;
+    padding-right: 93px;
+  }
+.img{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+}
+.img img{
+cursor: pointer;
+ border:2px solid black
+}
+
+.offer{
+   font-weight:bold;
+}
